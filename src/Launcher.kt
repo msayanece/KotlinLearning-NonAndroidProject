@@ -49,5 +49,13 @@ fun main(){
     /*//Map
     testMap()
     testMapWithTo()*/
-    //
+
+    /*// default argument in function
+    addition(2,3)
+    // named argument in function
+    addition(2,3, num4 = 6)*/
+
+    /*//Extension functions for String
+    "sayan".pondCase()
+    "sayan".reverseAndPondCase()*/
 }

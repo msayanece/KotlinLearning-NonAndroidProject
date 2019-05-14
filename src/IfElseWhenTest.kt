@@ -1,12 +1,14 @@
 
-fun ifElseTest(num1: Int, num2: Int) {
-    var result: String
-    result = if (num1 > num2)
-        "IF: $num1 is greater than $num2"
-    else if (num2 > num1)
-        "ELSE-IF: $num2 is greater than $num1"
-    else
-        "ELSE: both are equal"
+fun ifElseTest(num1: Int?, num2: Int) {
+    var result: String = ""
+    if (num1 != null) {
+        result = if (num1 > num2)
+            "IF: $num1 is greater than $num2"
+        else if (num2 > num1)
+            "ELSE-IF: $num2 is greater than $num1"
+        else
+            "ELSE: both are equal"
+    }
     println(result)
 }
 
