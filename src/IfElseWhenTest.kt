@@ -20,10 +20,27 @@ fun testWhen(arg: Int): String{
     }
 }
 
-fun testComplexWhen(arg: Int): String{
+fun testMultiCaseWhen(arg: Int): String{
     return when(arg){
         1,3,5,7,9 -> "Odd"
         2,4,6,8,10 -> "Even"
+        else -> "Improper input: please give any number from 1 to 4."
+    }
+}
+
+fun testComplexWhen(arg: Int): String{
+    return when(val t =testWhen(arg)){
+        "One" -> "Odd"
+        "Two" -> "Even"
+        else -> "Improper input: please give any number from 1 to 4."
+    }
+}
+
+
+fun testWhenWithoutCondition(arg: Int): String{
+    return when{
+        arg == 1 -> "Odd"
+        arg == 2 -> "Even"
         else -> "Improper input: please give any number from 1 to 4."
     }
 }

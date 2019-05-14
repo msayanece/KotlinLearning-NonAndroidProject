@@ -31,7 +31,9 @@ fun main(){
     println(testWhen(2))*/
 
     /*//6 complex when expression
-    println(testComplexWhen(2))*/
+    println(testComplexWhen(2))
+    testMultiCaseWhen(2)
+    testWhenWithoutCondition(2)*/
 
     /*//7 for loop
     testForLoopIncrement()
@@ -44,7 +46,8 @@ fun main(){
     /*//8 List
     testList()
     testListWithIndex()*/
-    //Map
+    /*//Map
     testMap()
-    testMapWithTo()
+    testMapWithTo()*/
+    //
 }
